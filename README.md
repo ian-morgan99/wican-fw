@@ -49,6 +49,7 @@ We **highly recommend** ordering the **WiCAN PRO** version because:
 ## [webCAN](http://webcan.meatpi.com/) Coming soon!
 
 - [Important Notes](#important-notes)
+- [Compatibility with Generic OBD-II Readers](#compatibility-with-generic-obd-ii-readers)
 - [API](#api)
 - [Build](#build)
 - [Description](#description)
@@ -63,6 +64,26 @@ We **highly recommend** ordering the **WiCAN PRO** version because:
 - It is highly recommanded to turn OFF the BLE if not used. Otherwise it might affect the preformance.
 - When the BLE is connected, the device configuration access point will be disabled i.e you won't be able to configure the device unless you disconnect the BLE, by turning off the BLE on your phone or device.
 - If AP+Station mode is enabled, only use station IP to communicate with the device and AP must be used for configuration only.
+
+# **Compatibility with Generic OBD-II Readers**
+
+**WiCAN IS a wireless and Bluetooth-enabled OBD-II reader** - it's not software that runs on other readers. This repository contains the firmware for WiCAN hardware devices.
+
+### Can WiCAN Work as a Generic OBD-II Reader?
+
+**Yes!** WiCAN is compatible with most generic OBD-II applications:
+
+- ✅ **ELM327 Protocol Support**: Works with Car Scanner, Torque Pro, OBD Fusion, and other ELM327-compatible apps
+- ✅ **WiFi & Bluetooth (BLE)**: Connect wirelessly from mobile devices or computers
+- ✅ **Multiple Protocols**: ELM327, RealDash, SLCAN, GVRET support
+- ✅ **Wide Vehicle Compatibility**: Works with most OBD-II vehicles (2006+)
+- ✅ **Open Source**: Fully customizable firmware
+
+### Can This Firmware Run on Other OBD-II Readers?
+
+**No** - This firmware is specifically designed for WiCAN hardware (ESP32-C3 based). Attempting to flash it on incompatible hardware could damage the device.
+
+**📖 For detailed compatibility information, see [Compatibility Documentation](https://meatpihq.github.io/wican-fw/compatibility/generic-obdii-compatibility)**
   
 # **API**
 [API Documentation](https://drive.google.com/drive/folders/1qJelUAHGrn_YbNIP0Jk_KmNENG-hKbtl?usp=sharing)
